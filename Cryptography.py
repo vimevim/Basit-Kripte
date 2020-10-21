@@ -1,18 +1,20 @@
 import string
 import random
+#random key generator
 lettersDigitsPanctuations = list(string.ascii_letters + string.digits + string.punctuation+ " ") #sorted alphabet, symbolls, digits, punctuations
 alpha =''.join(lettersDigitsPanctuations)#declare list to the string without seperations
 random.shuffle(lettersDigitsPanctuations)#shuffle alphabet, symbolls, digits, punctuations
 key=''.join(lettersDigitsPanctuations)#declare shuffled list to the string without seperations
+#random key generator
 keepGoing = True#loop forever
-def encode(encrypted):# Parametre
+def encode(encrypted):# encode method
     encrypted = encrypted.strip()
     crypted = ""
-    for i in encrypted:#encrypted boyunca dön
-        crypted += str(key[key.find(key[alpha.find(i)])])#burası iyi bir açıklamayı hak ediyor
+    for i in encrypted:#loop while encrypted
+        crypted += str(key[key.find(key[alpha.find(i)])])#this line needs a good explanation 
     return "Encode edilmiş şifreniz: " + crypted
 
-def decode(crypted):  # Parametre
+def decode(crypted):#decode method
     crypted = crypted.strip()
     encrypted = ""
     for a in crypted:
