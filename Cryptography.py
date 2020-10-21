@@ -6,7 +6,6 @@ random.shuffle(lettersDigitsPanctuations)#shuffle alphabet, symbolls, digits, pu
 key=''.join(lettersDigitsPanctuations)#declare shuffled list to the string without seperations
 keepGoing = True#loop forever
 def encode(encrypted):# Parametre
-    encrypted = encrypted.strip()
     crypted = ""
     for i in encrypted:#encrypted boyunca dön
         crypted += str(key[alpha.find(i)])
