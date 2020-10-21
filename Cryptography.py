@@ -5,19 +5,19 @@ alpha =''.join(lettersDigitsPanctuations)#declare list to the string without sep
 random.shuffle(lettersDigitsPanctuations)#shuffle alphabet, symbolls, digits, punctuations
 key=''.join(lettersDigitsPanctuations)#declare shuffled list to the string without seperations
 keepGoing = True#loop forever
-def encode(encrypted):# Parametre
+def encode(encrypted):
     crypted = ""
-    for i in encrypted:#encrypted boyunca dön
-        crypted += str(key[alpha.find(i)])
+    for i in encrypted:#loop while encrypted
+        crypted += str(key[alpha.find(i)]) 
         """For example, our password is "kask" and the "i" variable loops while "kask" and gives us the character which 0-1-2-3 indexes holds
         Our first character is "k". "alpha.find(i)" = "alpha.find("k") which gives us the index of "k" in the "alpha" and lets say "k" letter stands in "13" index
         "key[alpha.find(i)]" is equal with "key[13]" which it gives us the 13th index of "key" and lets say 13th index of key holds "S" letter
         """
     return "Encode edilmiş şifreniz: " + crypted
 
-def decode(crypted):  # Parametre
+def decode(crypted):
     encrypted = ""
-    for a in crypted:
+    for a in crypted:#loop while crypted
         encrypted += str(alpha[key.find(a)])
     return "Decode edilmiş şifreniz: " + encrypted
 
