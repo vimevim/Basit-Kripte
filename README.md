@@ -10,4 +10,4 @@ Değerleme:
 * While döngüsü ile sonsuz menü yapıldı.
 * Şifreleme teknolojileri ile ilgili araştırmalar yapıldı ve bilgi dağarcığı genişledi.
 * Metodlar kullanıldı ve parametre kullanımı öğrenildi.
-* Repositorinin eski sürümlerine bakınca algoritmanın ne kadar karmaşık hazırlandığını zaman içerisinde basitleştirildiğini görebiliriz, bunun sebebi C# dilinden gelen pratik düşünme yönteminin yeni öğrendiğim Python diline geçerken kısa yol yerine uzun yoldan gitmesidir. Sonuç olarak algoritmayı olabilecek en pratik şekilde çalıştırmanın yolunu buldum.
+* Repositorinin eski sürümlerine bakınca algoritmanın ne kadar karmaşık hazırlandığını güncellendikçe basitleştirildiğini görebiliriz, bunun sebebi C# dilinden gelen pratik düşünme yönteminin yeni öğrendiğim Python diline geçerken kısa yol yerine uzun yoldan gitmeme sebep olması diye düşünüyorum. Sonuç olarak algoritmayı olabilecek en pratik şekilde çalıştırmanın yolunu bulmayı denedim.
