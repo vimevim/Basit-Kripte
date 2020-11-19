@@ -7,6 +7,12 @@ def encode(encrypted):# Parametre
     crypted = ""
     for i in encrypted:#encrypted boyunca dön
         crypted += str(key[alpha.find(i)])
+        """For example, our password is "kask" and the "i" variable loops while "kask" and gives us the character which 0-1-2-3 indexes holds
+        Our first character is "k". "alpha.find(i)" = "alpha.find("k") which gives us the index of "k" in the "alpha" and lets say "k" letter stands in 13th index
+        "key[alpha.find(i)]" is equal with "key[13]" which it gives us the 13th index of "key" and lets say 13th index of key holds "S" letter so "kask" turns into "Sask"
+        Our second character is "a". "alpha.find(i)" = "alpha.find("a") which gives us the index of "a" in the "alpha" and lets say "a" letter stands in 24th index
+        "key[alpha.find(i)]" is equal with "key[24]" which it gives us the 24th index of "key" and lets say 24th index of key holds "j" letter so "Sask" turns into "Sjsk"
+        """
     return "Encode edilmiş şifreniz: " + crypted + "\nKey: \""+ key+"\""
 def decode(crypted):  # Parametre
     encrypted = ""
